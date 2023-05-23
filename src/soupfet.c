@@ -16,17 +16,17 @@ int main() {
     host();
     printf("▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁\n\n");
 
-    printf("\e[1;31mOS:\e[m       ");
+    printf("\e[1;31mos\e[m       ");
     os();
 
-    printf("\e[1;34mKernel:\e[m   ");
+    printf("\e[1;34mkernel\e[m   ");
     kernel();
 
-    printf("\e[1;35mSh:\e[m       %s\n", getenv("SHELL"));
+    printf("\e[1;35msh\e[m       %s\n", getenv("SHELL"));
 
-    printf("\e[1;31mWM:\e[m       %s\n", getenv("DESKTOP_SESSION"));
+    printf("\e[1;31mwm\e[m       %s\n", getenv("DESKTOP_SESSION"));
 
-    printf("\e[1;33mpkgs:\e[m     ");
+    printf("\e[1;33mpkgs\e[m     ");
     fflush(stdout);
     pkg();
 
