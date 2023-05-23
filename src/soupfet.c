@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 void ascii();
-void os();
+int os();
 void kernel();
 void host();
 void pkg();
@@ -33,16 +33,34 @@ int main() {
     return 0;
 }
 
-void os() {
+int os() {
+    char* os_path = "/etc/os-release";
+    char* lsb_path = "/etc/lsb-release";
+    char* path = NULL;
+
+    if (!access(os_path, F_OK)) {
+        path = os_path;
+    } else if (!access(lsb_path, F_OK)) {
+        path = lsb_path;
+    } else {
+        printf("Linux\n");
+        return 1;
+    }
+
     FILE *fp;
     char line[40];
-    fp = fopen("/etc/lsb-release", "r");
+    fp = fopen(path, "r");
+
+    if (fp == NULL) {
+        return 1;
+    }
 
     fgets(line, 40, fp);
     char* name = strchr(line, '=') + 1;
 
     printf("%s", name);
     fclose(fp);
+    return 0;
 }
 
 void kernel() {
