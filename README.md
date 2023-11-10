@@ -3,7 +3,7 @@
 
 > A tiny system information tool for Linux
 
-<img src="./assets/screenshot.png" width="350">
+<img src="./assets/screenshot.png" width="400">
 
 ## Installation
 from source:
