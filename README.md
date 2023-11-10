@@ -1,5 +1,6 @@
 
 <h1>soupfet</h1>
+
 > A tiny system information tool for Linux
 
 <img src="./assets/screenshot.png" width="350">
