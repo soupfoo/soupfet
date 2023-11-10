@@ -17,3 +17,6 @@ You can download a prebuilt binary from [releases page](https://github.com/soupf
 
 ## License
 soupfet is licensed under the MIT license. See [LICENSE](./LICENSE) for details.
+
+## Acknowledgement
+[bunnyfetch](https://github.com/Rosettea/bunnyfetch)
