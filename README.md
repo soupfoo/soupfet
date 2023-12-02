@@ -6,7 +6,8 @@
 <img src="./assets/screenshot.png" width="400">
 
 ## Installation
-from source:
+Prerequisites:
+- a go compiler (>=v1.21)
 ```
 git clone https://github.com/soupfoo/soupfet.git
 cd soupfet
