@@ -7,11 +7,10 @@
 
 ## Installation
 
-**Prerequisite:**
-
-a Go compiler (>=v1.21)
-
 **Build from source:**
+
+Required: Go compiler (>=v1.21)
+
 
 ```
 git clone https://github.com/soupfoo/soupfet.git
