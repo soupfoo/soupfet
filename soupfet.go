@@ -17,7 +17,7 @@ var (
 
 func bunny() {
 	fmt.Printf(`
-  /\__/\
+  (\ /)
   ( . .)
   c(%s"%s)(%s"%s)
 %s`, red, reset, red, reset, "\n")
